@@ -23,10 +23,11 @@ public class Category {
     private Long id;
 
     @Column(nullable = false, unique = true)
+    @Size(max = 255)
     @NotBlank
     private String name;
 
     @Column(nullable = true)
-    @Size(max=250)
+    @Size(max = 255)
     private String description;
 }
